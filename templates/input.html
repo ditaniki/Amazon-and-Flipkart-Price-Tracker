@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Price Tracker</title>
+    <style>
+    .header{
+        background-color: coral;
+        color: white;
+        margin: -10px;   
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: tomato;
+        color: white;
+        text-align: center;
+        font-family: verdana; 
+    }
+    .button {
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .button5 {
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .button5:hover {
+        background-color: #555555;
+        color: white;
+    }
+    </style>
+</head>
+
+<body style = "background-color: lightgrey;">
+    <div class="header">
+        <br><br>
+        <h1 style="text-align:center;">PRICE TRACKER</h1>
+        <br><br>
+    </div>
+    <br>
+    <h3 style="text-align:center; color:#2F4F4F;">
+    This website allows you to track prices from Amazon and Flipkart and get email alerts when the price falls below your budget price
+    </h3>
+    
+    <form method="POST">
+        <table align="center" style="margin-top:100px; ">
+            <tr>
+                <td align="left"><b>Enter URL of the product:</b></td>
+                <td align="left"><input type="text" name="1" /></td>
+            </tr>
+        
+            <tr>
+                <td align="left"><b>Enter your bidget price:</b></td>
+                <td align="left"><input type="text" name="2" /></td>
+            </tr>
+    
+            <tr>
+                <td align="left"><b>Enter your email address:</b></td>
+                <td align="left"><input type="text" name="3" /></td>
+            </tr>
+        </table>
+
+        <div style = "position:absolute; left:710px; top:450px;">
+            <button class="button button5" type="submit">Track</button>
+        </div>
+    </form>
+
+    
+    <div class="footer">
+        <p>&copy Nivedita Majee</p>
+    </div>
+</body>
