@@ -67,7 +67,7 @@ def input():
         message = MIMEMultipart()
         message['From'] = sender_address
         message['To'] = email_address
-        message['Subject'] = '!!!AMAZON PRICE DROP ALERT!!!'   #The subject line
+        message['Subject'] = '!!!PRICE DROP ALERT!!!'   #The subject line
         #The body and the attachments for the mail
         message.attach(MIMEText(mail_content, 'plain'))
         #Create SMTP session for sending the mail
